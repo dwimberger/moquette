@@ -6,8 +6,7 @@
 [Documentation site] (http://andsel.github.io/moquette/)
 Moquette aims to be a MQTT compliant broker. The broker supports QoS 0, QoS 1 and QoS 2.
 
-Its designed to be evented, uses Netty for the protocol encoding and decoding part, the protocol logic 
-is essentially a single threaded and it's isolated from front connectors part by LMAX disruptor's ring buffer.
+Its designed to be evented, uses Netty for the protocol encoding and decoding part.
  
 ## Embeddable
 
@@ -17,7 +16,7 @@ Part of moquette are used into the [Vertx MQTT module] (https://github.com/giovi
 and into [WSO2 Messge broker] (http://techexplosives-pamod.blogspot.it/2014/05/mqtt-transport-architecture-wso2-mb-3x.html).
 
 ## 1 minute set up
-Start play with it, download the self distribution tar from [BinTray](http://dl.bintray.com/andsel/generic/distribution-0.6-bundle-tar.tar.gz) ,
+Start play with it, download the self distribution tar from [BinTray](http://dl.bintray.com/andsel/generic/distribution-0.7-bundle-tar.tar.gz) ,
 the un untar and start the broker listening on 1883 port and enjoy! 
 ```
 tar zxf distribution-0.7-bundle-tar.tar.gz
@@ -53,9 +52,9 @@ Include dependency in your project:
 
 ```
 <dependency>
-      <groupId>org.eclipse.moquette</groupId>
+      <groupId>io.moquette</groupId>
       <artifactId>moquette-broker</artifactId>
-      <version>0.7</version>
+      <version>0.8-SNAPSHOT</version>
 </dependency>
 ```
 
